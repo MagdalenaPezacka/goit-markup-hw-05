@@ -42,8 +42,15 @@ header {
   align-items: center;
 }
 /*header*/
+.is-active {
+  display: block;
+  width: 53px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--brand-color);
+}
 .mainpagefont {
-  display: flex;
+  display: inline-block;
   margin: 0;
   padding: 0;
   font-family: "Raleway";
@@ -61,24 +68,33 @@ header {
 }
 .site-nav {
   display: flex;
+  max-height: 80px;
   justify-content: space-around;
+  align-content: center;
   list-style-type: none;
   gap: 46px;
+  margin-top: 0px;
   margin-left: 93px;
   margin-right: 371px;
+  margin-bottom: 0px;
   padding-left: 0;
 }
 .site-nav .link {
+  display: inline-block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   color: var(--almost-black);
+  margin-top: 0;
+  padding-top: 32px;
+  padding-bottom: 28px;
 }
 .site-nav .link:hover,
 .site-nav .link:focus,
 .site-nav .link:active {
   color: var(--brand-color);
 }
+
 .contacts {
   display: flex;
   padding: 0;
@@ -463,7 +479,7 @@ footer {
 .foot-container {
   width: 1200px;
   margin: 0 auto;
-  padding-left: 5px;
+  padding-left: 25px;
 }
 .footer-blocks {
   display: flex;
