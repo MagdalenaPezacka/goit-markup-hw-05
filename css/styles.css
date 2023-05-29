@@ -42,13 +42,7 @@ header {
   align-items: center;
 }
 /*header*/
-.is-active {
-  display: block;
-  width: 53px;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--brand-color);
-}
+
 .mainpagefont {
   display: inline-block;
   margin: 0;
@@ -95,6 +89,15 @@ header {
   color: var(--brand-color);
 }
 
+.site-nav .is-active::after {
+  content: "";
+  display: block;
+  width: 53px;
+  height: 4px;
+  margin-bottom: 28px;
+  border-radius: 2px;
+  background-color: var(--brand-color);
+}
 .contacts {
   display: flex;
   padding: 0;
@@ -257,13 +260,39 @@ header {
   color: var(--light-grey);
 }
 
-.imgwhatwedo {
+.whatwedo {
   display: flex;
   margin: 0 auto;
   width: 1200px;
   justify-content: center;
   gap: 30px;
   padding-left: 0;
+}
+.wedo {
+  position: relative;
+  margin: 0;
+  top: 0;
+  letf: 0;
+  overflow: hidden;
+}
+.wedo > .label {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--total-white);
+  background-color: rgba(47, 48, 58, 0.8);
+  top: 224px;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  padding-top: 27px;
 }
 .subtitle {
   font-weight: 700;
@@ -378,7 +407,6 @@ header {
 /*portfolio*/
 .container {
   max-width: 1200px;
-
   margin: 0 auto;
   padding: 0;
   padding-top: 94px;
@@ -444,6 +472,31 @@ header {
   background-color: var(--total-white);
   width: 370px;
   height: 404px;
+}
+.aboutproject {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translatey(100%);
+  transition: transform 250ms ease-in-out;
+}
+.overlay p {
+  color: var(--total-white);
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  padding: 49px 45px 49px 24px;
+  margin: 0;
+}
+.project:hover .overlay {
+  transform: translateX(0);
 }
 
 .undersign {
