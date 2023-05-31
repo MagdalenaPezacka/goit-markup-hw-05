@@ -82,6 +82,9 @@ header {
   margin-top: 0;
   padding-top: 32px;
   padding-bottom: 28px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .link:hover,
 .site-nav .link:focus,
@@ -92,7 +95,7 @@ header {
 .site-nav .is-active::after {
   content: "";
   display: block;
-  width: 53px;
+  width: auto;
   height: 4px;
   margin-bottom: 28px;
   border-radius: 2px;
@@ -106,27 +109,17 @@ header {
   align-items: center;
   gap: 30px;
 }
-/*moje stare  width: 321px;
-  height: 16px;
-  margin-left: 0;
-  padding-left: 0;
-
-.contacts > .header-contact-item {
-  width: 161px;
-  height: 16px;
-  justify-content: space-around;
-  margin: 0;
-  padding: 0;
-  gap: 30px;
-}*/
 .envelope-icon {
   margin-right: 10px;
   fill: currentColor;
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .envelope-icon:hover,
 .envelope-icon:focus {
   color: var(--brand-color);
-  cursor: pointer;
 }
 .email-link {
   display: flex;
@@ -138,11 +131,14 @@ header {
   letter-spacing: 0.02em;
   width: 161px;
   height: 16px;
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .email-link:hover,
 .email-link:focus {
   color: var(--brand-color);
-  cursor: pointer;
 }
 .phonenumber {
   display: flex;
@@ -155,21 +151,27 @@ header {
   letter-spacing: 0.02em;
   width: 130px;
   height: 16px;
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .phone-icon {
   margin-right: 10px;
   fill: currentColor;
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .phonenumber:hover,
 .phonenumber:focus,
 .phonenumber:active {
   color: var(--brand-color);
-  cursor: pointer;
 }
 .phone-icon:hover,
 .phone-icon:focus {
   color: var(--brand-color);
-  cursor: pointer;
 }
 /*main*/
 
@@ -197,7 +199,7 @@ header {
   height: 600px;
 }
 .title {
-  margin: auto;
+  margin: 0;
   padding: 200px 452px 30px 452px;
   font-weight: 900;
   font-size: 44px;
@@ -361,6 +363,10 @@ header {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  cursor: pointer;
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socialmedia {
   margin: 12px;
@@ -369,7 +375,6 @@ header {
 .social-icons:hover,
 .social-icons:focus {
   background-color: var(--brand-color);
-  cursor: pointer;
 }
 .social-icons:hover > .socialmedia,
 .social-icons:focus > .socialmedia {
@@ -395,13 +400,16 @@ header {
   fill: var(--icon-border);
   border: 1px solid var(--icon-border);
   border-radius: 4px;
+  cursor: pointer;
+  transition-property: fill, border, border-radius;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client:hover,
 .client:focus {
   fill: var(--brand-color);
   border: 1px solid var(--brand-color);
   border-radius: 4px;
-  cursor: pointer;
 }
 /*portfolio*/
 .container {
@@ -437,6 +445,9 @@ header {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-button:hover,
 .portfolio-button:focus,
@@ -460,12 +471,15 @@ header {
 .project {
   display: block;
   margin: 0 auto;
+  cursor: pointer;
+  transition-property: box-shadow, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project:hover,
 .project:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
 }
 .all-projects .project {
   background-color: var(--total-white);
@@ -564,6 +578,9 @@ footer {
   line-height: 1.71;
   color: var(--middle-grey);
   padding-bottom: 9px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-phonenumber {
   display: block;
@@ -572,6 +589,9 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--middle-grey);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-email-link:hover,
 .footer-email-link:focus,
@@ -611,6 +631,10 @@ footer {
   height: 44px;
   background-color: var(--footer-icon);
   border-radius: 50%;
+  cursor: pointer;
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-socialmedia {
   margin: 12px;
@@ -619,7 +643,6 @@ footer {
 .footer-social-icons:hover,
 .footer-social-icons:focus {
   background-color: var(--brand-color);
-  cursor: pointer;
 }
 .footer-social-icons:hover > .footer-socialmedia,
 .footer-social-icons:focus > .footer-socialmedia {
@@ -641,12 +664,20 @@ footer {
   left: 50%;
   width: 528px;
   min-height: 581px;
+  place-items: center;
   transform: translate(-50%, -50%);
   background: var(--total-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+.not-hidden {
+  transition-duration: 1s;
+  transition-delay: 10ms;
+  transform: scale(1);
+  opacity: 1;
+}
+
 .close-btn {
   position: absolute;
   display: block;
